@@ -1,0 +1,20 @@
+/* Keep the selected menu item visually independent from its hovered neighbour. */
+aside .nav {
+  border-left: 3px solid transparent;
+  padding: 12px 12px 12px 9px;
+  margin: 2px 0;
+  transition: background .16s ease, color .16s ease;
+}
+
+aside .nav:hover:not(.active) {
+  background: #13223f;
+  color: #e9f2ff;
+  box-shadow: none;
+}
+
+aside .nav.active {
+  background: #1a2c50;
+  color: #fff;
+  border-left-color: #55aaff;
+  box-shadow: none;
+}
